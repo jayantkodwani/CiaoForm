@@ -104,7 +104,7 @@
 
     <!-- Logo container -->
   <div class="logo-container">
-    <img src="Ciao_Logo.jpg" alt="Company Logo"> 
+    <img src="templates/Ciao_Logo.jpg" alt="Company Logo"> 
   </div>
   
   <h2>Ciao Payment Submission Form</h2>
@@ -112,7 +112,7 @@
   <form id="expenseForm">
     
     <!-- Expense Type -->
-    <label for="expenseType">Expense Type</label>
+    <label for="expenseType">*Expense Type</label>
     <select id="expenseType" name="ExpenseType" required onchange="toggleOtherExpense()">
       <option value="">-- Select Expense Type --</option>
       <option value="Salary">Salary</option>
@@ -128,15 +128,15 @@
     <input type="text" id="otherExpenseType" name="OtherExpenseType" placeholder="Specify Other Expense" class="hidden">
 
     <!-- Paid To -->
-    <label for="paidTo">Paid To</label>
+    <label for="paidTo">*Paid To</label>
     <input type="text" id="paidTo" name="PaidTo" placeholder="Recipient's Name" required>
 
     <!-- Amount Paid -->
-    <label for="amountPaid">Amount Paid (AED)</label>
+    <label for="amountPaid">*Amount Paid (AED)</label>
     <input type="number" id="amountPaid" name="AmountPaid" step="0.01" min="0" placeholder="0.00" required>
 
     <!-- Project Name -->
-    <label for="projectName">Project Name</label>
+    <label for="projectName">*Project Name</label>
     <select id="projectName" name="ProjectName" required onchange="toggleOtherProject()">
       <option value="">-- Select Project --</option>
       <option value="Amazon FM">Amazon FM</option>
